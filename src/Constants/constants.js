@@ -29,6 +29,7 @@ import {
   fastapi,
   figmaIcon,
   checkout,
+  personalweb,
   avatar,
   orandaIcon,
 } from '../assets';
@@ -103,6 +104,13 @@ const projects = [
     image: checkout,
     source_code_link: 'https://github.com/moeodeh3/VisionSelfCheckout',
     demo_link: 'https://github.com/moeodeh3/VisionSelfCheckout',
+  },
+  {
+    name: "Personal Porfolio",
+    description: 'My Personal Portfolio, developed using React, Vite, and Tailwind CSS, is hosted on GitHub Pages, and my domain is registered through Google Domains.',
+    image: personalweb,
+    source_code_link: 'https://github.com/moeodeh3/moeodeh3.github.io',
+    demo_link: 'https://github.com/moeodeh3/moeodeh3.github.io',
   },
 ];
 

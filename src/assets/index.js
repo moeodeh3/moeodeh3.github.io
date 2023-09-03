@@ -27,6 +27,7 @@ import orandaIcon from './jobs/oranda.png';
 
 // Projects
 import checkout from './projects/checkout.gif';
+import personalweb from './projects/personalweb.gif';
 
 // Avatar
 import avatar from './avatar/avatar.webp';
@@ -49,6 +50,7 @@ export {
   raspIcon,
   fastapi,
   checkout,
+  personalweb,
   avatar,
   moeLogo,
   orandaIcon,
