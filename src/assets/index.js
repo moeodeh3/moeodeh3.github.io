@@ -14,11 +14,19 @@ import gitIcon from './tech/git.png';
 import githubIcon from './tech/github.png';
 import figmaIcon from './tech/figma.png';
 import psqlIcon from './tech/postgresql.png';
+import pyTorch from './tech/pyTorch.png';
 import viteIcon from './tech/vite.svg';
 import pyIcon from './tech/py.png';
 import nodeIcon from './tech/node.webp';
 import raspIcon from './tech/raspi.png';
 import fastapi from './tech/fastapi.png';
+import tensorflow from './tech/tensorflow.png';
+import pandas from './tech/pandas.png';
+import numpy from './tech/numpy.png';
+import anaconda from './tech/anaconda.png'; 
+import gcp from './tech/gcp.png';
+import docker from './tech/docker.png';
+import c from './tech/c.png';
 import close from './close.svg';
 import menu from './menu.svg';
 
@@ -27,7 +35,7 @@ import orandaIcon from './jobs/oranda.png';
 
 // Projects
 import checkout from './projects/checkout.gif';
-import personalweb from './projects/personalweb.gif';
+import clockIn from './projects/clockIn.jpg';
 
 // Avatar
 import avatar from './avatar/avatar.webp';
@@ -50,9 +58,17 @@ export {
   raspIcon,
   fastapi,
   checkout,
-  personalweb,
+  clockIn,
   avatar,
   moeLogo,
   orandaIcon,
-  background
+  pyTorch,
+  background,
+  tensorflow,
+  pandas,
+  numpy,
+  c,
+  anaconda,
+  gcp,
+  docker
 };

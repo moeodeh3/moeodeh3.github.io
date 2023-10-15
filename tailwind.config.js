@@ -11,6 +11,13 @@ export default {
       },
     },
     colors: {
+      white: '#ffffff',
+      green: '#10b981',
+      blue: '#3b82f6',
+      pink: '#ec4899',
+      red: '#ef4444',
+      yellow: '#f59e0b',
+      purple: '#8b5cf6',
       primary: {
         400: '#cbbde5',
         500: '#5C546B',

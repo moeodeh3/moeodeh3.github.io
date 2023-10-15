@@ -29,9 +29,17 @@ import {
   fastapi,
   figmaIcon,
   checkout,
-  personalweb,
+  clockIn,
   avatar,
   orandaIcon,
+  pyTorch,
+  tensorflow,
+  pandas,
+  numpy,
+  c,
+  anaconda,
+  gcp,
+  docker
 } from '../assets';
 
 library.add(faX, faBars, faWindowRestore, faBagShopping, faDiceD6);
@@ -100,18 +108,63 @@ export const navLinks = [
 const projects = [
   {
     name: "VisionSelfCheckout",
-    description: 'A self-checkout system using a custom-trained YOLOv8 model for accurate object detection and recognition.',
+    description:
+      "A full-stack self-checkout system leveraging computer vision for object detection and recognition. The source code includes a React front-end, Python-based backend with a custom YOLOv8 model, and a PostgreSQL database",
+    tags: [
+      {
+        name: "React",
+        color: "text-blue",
+      },
+      {
+        name: "PyTorch",
+        color: "text-green",
+      },
+      {
+        name: "FastAPI",
+        color: "text-pink",
+      },
+      {
+        name: "PostgreSQL",
+        color: "text-yellow",
+      },
+      {
+        name: "Python",
+        color: "text-purple",
+      },
+    ],
     image: checkout,
-    source_code_link: 'https://github.com/moeodeh3/VisionSelfCheckout',
-    demo_link: 'https://github.com/moeodeh3/VisionSelfCheckout',
+    source_code_link: "https://github.com/moeodeh3/VisionSelfCheckout",
   },
   {
-    name: "Personal Porfolio",
-    description: 'My Personal Portfolio, developed using React, Vite, and Tailwind CSS, is hosted on GitHub Pages, and my domain is registered through Google Domains.',
-    image: personalweb,
-    source_code_link: 'https://github.com/moeodeh3/moeodeh3.github.io',
-    demo_link: 'https://github.com/moeodeh3/moeodeh3.github.io',
+    name: "ClockIn",
+    description:
+      "A full-stack application for a fingerprint recognition clock-in system with a database stored on GCP. The source code includes a React front-end, Python-based backend powered by FastAPI, complemented by an admin panel",
+    tags: [
+      {
+        name: "React",
+        color: "text-green",
+      },
+      {
+        name: "UART",
+        color: "text-blue",
+      },
+      {
+        name: "FPR",
+        color: "text-red",
+      },
+      {
+        name: "GCP",
+        color: "text-yellow",
+      },
+      {
+        name: "FastAPI",
+        color: "text-pink",
+      },
+    ],
+    image: clockIn,
+    source_code_link: "https://github.com/moeodeh3/ClockIn",
   },
+  
 ];
 
 const memoji = {
@@ -148,11 +201,32 @@ const skills = [
       'I am certified in React, which allows me to create reusable components, apply state using hooks and context, ultimately allowing me to build dynamic web pages.',
   },
   {
+    id: 'anaconda',
+    title: 'Anaconda',
+    icon: anaconda,
+    description:
+      'I have used Anaconda in multiple projects, especially as a package manager for AI-related projects',
+  },
+    {
+    id: 'gcp',
+    title: 'GCP',
+    icon: gcp,
+    description:
+      'I have used Google Cloud Platform (GCP) in multiple projects, particularly for hosting databases',
+  },
+  {
     id: 'java',
     title: 'Java',
     icon: javaIcon,
     description:
       'With over three years of experience in object-oriented programming and implementing data structures, I am well-versed in Java',
+  },
+    {
+    id: 'pandas',
+    title: 'Pandas',
+    icon: pandas,
+    description:
+      'During my time at Oranda, I worked with the Pandas library to create an innovative AI-driven art platform',
   },
   {
     id: 'figma',
@@ -160,6 +234,20 @@ const skills = [
     icon: figmaIcon,
     description:
     'I am proficient in utilizing Figma to assist in designing and structuring CSS layouts.',
+  },
+  {
+    id: 'pyTorch',
+    title: 'PyTorch',
+    icon: pyTorch,
+    description:
+    'During my time at Oranda, I used PyTorch to create an innovative AI-driven art platform',
+  },
+    {
+    id: 'docker',
+    title: 'Docker',
+    icon: docker,
+    description:
+    'During my time at Oranda, I used Docker to deploy and test an innovative AI-driven art platform. This allowed for efficient and consistent testing and deployment of our solution',
   },
   {
     id: 'git',
@@ -182,6 +270,13 @@ const skills = [
     description:
       'During my time at Oranda as an intern, I got hands-on with PostgreSQL. This included crafting and handling complex database schemas. This practical experience covered diverse areas like database normalization, triggers, and front-end connectivity.',
   },
+    {
+    id: 'tensorflow',
+    title: 'Tensorflow',
+    icon: tensorflow,
+    description:
+    'During my time at Oranda, I used Tensorflow to create an innovative AI-driven art platform',
+  },
   {
     id: 'py',
     title: 'Python',
@@ -189,12 +284,26 @@ const skills = [
     description:
       'With three years of Python experience under my belt, I have refined my skills in back-end development, focusing particularly on AI.',
   },
+    {
+    id: 'c',
+    title: 'C',
+    icon: c,
+    description:
+      'I have a basic understanding of C from my school coursework',
+  },
   {
     id: 'node',
     title: 'Node',
     icon: nodeIcon,
     description:
       'When it comes to building web applications, I prefer using Node as my runtime environment over Yarn. I have expertise in leveraging Node.js to develop powerful and scalable web applications.',
+  },
+    {
+    id: 'numpy',
+    title: 'NumPy',
+    icon: numpy,
+    description:
+      'I gained significant experience using the NumPy library in numerous projects',
   },
   {
     id: 'raspi',
@@ -208,7 +317,7 @@ const skills = [
     title: 'FastAPI',
     icon: fastapi,
     description:
-      'Ive got firsthand experience working with FastAPI from my time at Oranda. While I was there, I skillfully linked up front-end and backend using FastAPI FastAPIs high-performance web framework',
+      'I have got firsthand experience working with FastAPI from my time at Oranda. While I was there, I seamlessly linked up front-end and backend using FastAPIs high-performance web framework',
   },
 ];
 
@@ -217,7 +326,7 @@ const cardInfo={
     companylogo: orandaIcon,
     role: "Software Developer Intern",
     date: "December 2022 - April 2023",
-    desc: "During my internship at this startup, I focused on backend development using FastAPI. I optimized data processing for seamless communication between components. Additionally, I fine-tuned image generation models, enhancing their quality. I also played a role in shaping the database using PostgreSQL, implementing features and ensuring smooth migrations with Alembic. This experience allowed me to blend theory and practical skills, leaving a notable impact on the company's technological advancements.",
+    desc: "During my internship, I contributed to the development of the back-end infrastructure for an innovative AI-driven art platform, using PyTorch, FastAPI, GCP, and PostgreSQL. I also accomplished a 40% reduction in inference costs for a proprietary Stable Diffusion model by transitioning to serverless GPU hosting. In addition, I designed and implemented an creative legal tool that transformed the process of navigating PDF documents into a seamless, AI-enhanced experience for a prominent real estate firm.",
 }
 
 const markerSvg = `<svg viewBox="-4 0 36 36">

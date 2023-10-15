@@ -23,7 +23,7 @@ const About = () => {
                   stiffness: 100,
                   damping: 20,
                 }}
-                style={{ fontFamily: "Poppins, sans-serif" , fontSize: "18px" }}
+                style={{ fontFamily: "Poppins, sans-serif" , fontSize: "1.125rem" }}
                 className="text-grayscale-50 p-6 text-center flex flex-col gap-6"
               >
                 <span className="text-primary-400">{introduction.text[0]}</span>
@@ -34,7 +34,7 @@ const About = () => {
             </LazyMotion>
           </div>
           <div className="w-full md:w-[55%] flex h-full items-center justify-center">
-            <div className="w-[80%] lg:w-[50%] h-[300px] sm:h-[600px] flex justify-center items-center">
+            <div className="w-[80%] lg:w-[50%] h-[400px] sm:h-[400px] flex justify-center items-center">
               <ImageSlider images={memoji.image} />
             </div>
           </div>

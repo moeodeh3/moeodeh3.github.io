@@ -1,4 +1,5 @@
 
+
 export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
 
 
@@ -41,6 +42,11 @@ export const info = {
         {
             link: "https://twitter.com/Moe_Odeh3",
             icon: "fa fa-twitter",
+            label: 'twitter'
+        },
+        {
+            link: "./resume.pdf",
+            icon: "fa fa-file-alt",
             label: 'twitter'
         }
 
