@@ -32,6 +32,7 @@ import {
   clockIn,
   avatar,
   orandaIcon,
+  nestwalletIcon,
   pyTorch,
   tensorflow,
   pandas,
@@ -39,7 +40,8 @@ import {
   c,
   anaconda,
   gcp,
-  docker
+  docker,
+  background,
 } from '../assets';
 
 library.add(faX, faBars, faWindowRestore, faBagShopping, faDiceD6);
@@ -76,12 +78,11 @@ const icons = {
 
 const introduction = {
   text: [
-    "Hey there, it’s Mohammed Odeh! ",
+    'Hey there, it’s Mohammed Odeh! ',
 
     "I am a dedicated and passionate computer science student who has the relentless drive needed in the evolving world of technology. My work experience and projects have allowed me to learn many new things, and get a feel for what working in the field is actually like. With hands-on experience using React, FastAPI, Python, and PostgreSQL, I'm constantly expanding my skill set to stay ahead in the fast-paced environment that we work in.",
 
-    "Lets work together to overcome challenges, and create solutions that make a difference.",
-
+    'Lets work together to overcome challenges, and create solutions that make a difference.',
   ],
 };
 
@@ -101,70 +102,68 @@ export const navLinks = [
   {
     id: 'skills',
     title: 'Skills',
-  }
-
+  },
 ];
 
 const projects = [
   {
-    name: "VisionSelfCheckout",
+    name: 'VisionSelfCheckout',
     description:
-      "A full-stack self-checkout system leveraging computer vision for object detection and recognition. The source code includes a React front-end, Python-based backend with a custom YOLOv8 model, and a PostgreSQL database",
+      'A full-stack self-checkout system leveraging computer vision for object detection and recognition. The source code includes a React front-end, Python-based backend with a custom YOLOv8 model, and a PostgreSQL database',
     tags: [
       {
-        name: "React",
-        color: "text-blue",
+        name: 'React',
+        color: 'text-blue',
       },
       {
-        name: "PyTorch",
-        color: "text-green",
+        name: 'PyTorch',
+        color: 'text-green',
       },
       {
-        name: "FastAPI",
-        color: "text-pink",
+        name: 'FastAPI',
+        color: 'text-pink',
       },
       {
-        name: "PostgreSQL",
-        color: "text-yellow",
+        name: 'PostgreSQL',
+        color: 'text-yellow',
       },
       {
-        name: "Python",
-        color: "text-purple",
+        name: 'Python',
+        color: 'text-purple',
       },
     ],
     image: checkout,
-    source_code_link: "https://github.com/moeodeh3/VisionSelfCheckout",
+    source_code_link: 'https://github.com/moeodeh3/VisionSelfCheckout',
   },
   {
-    name: "ClockIn",
+    name: 'ClockIn',
     description:
-      "A full-stack application for a fingerprint recognition clock-in system with a database stored on GCP. The source code includes a React front-end, Python-based backend powered by FastAPI, complemented by an admin panel",
+      'A full-stack application for a fingerprint recognition clock-in system with a database stored on GCP. The source code includes a React front-end, Python-based backend powered by FastAPI, complemented by an admin panel',
     tags: [
       {
-        name: "React",
-        color: "text-green",
+        name: 'React',
+        color: 'text-green',
       },
       {
-        name: "UART",
-        color: "text-blue",
+        name: 'UART',
+        color: 'text-blue',
       },
       {
-        name: "FPR",
-        color: "text-red",
+        name: 'FPR',
+        color: 'text-red',
       },
       {
-        name: "GCP",
-        color: "text-yellow",
+        name: 'GCP',
+        color: 'text-yellow',
       },
       {
-        name: "FastAPI",
-        color: "text-pink",
+        name: 'FastAPI',
+        color: 'text-pink',
       },
     ],
     image: clockIn,
-    source_code_link: "https://github.com/moeodeh3/ClockIn",
+    source_code_link: 'https://github.com/moeodeh3/ClockIn',
   },
-  
 ];
 
 const memoji = {
@@ -184,14 +183,14 @@ const skills = [
     title: 'CSS',
     icon: cssIcon,
     description:
-    'I possess expertise in utilizing CSS to design web pages and craft visually captivating layouts that enhance the overall user experience.',
+      'I possess expertise in utilizing CSS to design web pages and craft visually captivating layouts that enhance the overall user experience.',
   },
   {
     id: 'javascript',
     title: 'JavaScript',
     icon: jsIcon,
     description:
-    'I have over a year of experience in employing JavaScript, enabling me to skillfully incorporate interactivity and functionality into web pages.',
+      'I have over a year of experience in employing JavaScript, enabling me to skillfully incorporate interactivity and functionality into web pages.',
   },
   {
     id: 'react',
@@ -207,7 +206,7 @@ const skills = [
     description:
       'I have used Anaconda in multiple projects, especially as a package manager for AI-related projects',
   },
-    {
+  {
     id: 'gcp',
     title: 'GCP',
     icon: gcp,
@@ -221,7 +220,7 @@ const skills = [
     description:
       'With over three years of experience in object-oriented programming and implementing data structures, I am well-versed in Java',
   },
-    {
+  {
     id: 'pandas',
     title: 'Pandas',
     icon: pandas,
@@ -233,28 +232,28 @@ const skills = [
     title: 'Figma',
     icon: figmaIcon,
     description:
-    'I am proficient in utilizing Figma to assist in designing and structuring CSS layouts.',
+      'I am proficient in utilizing Figma to assist in designing and structuring CSS layouts.',
   },
   {
     id: 'pyTorch',
     title: 'PyTorch',
     icon: pyTorch,
     description:
-    'During my time at Oranda, I used PyTorch to create an innovative AI-driven art platform',
+      'During my time at Oranda, I used PyTorch to create an innovative AI-driven art platform',
   },
-    {
+  {
     id: 'docker',
     title: 'Docker',
     icon: docker,
     description:
-    'During my time at Oranda, I used Docker to deploy and test an innovative AI-driven art platform. This allowed for efficient and consistent testing and deployment of our solution',
+      'During my time at Oranda, I used Docker to deploy and test an innovative AI-driven art platform. This allowed for efficient and consistent testing and deployment of our solution',
   },
   {
     id: 'git',
     title: 'Git',
     icon: gitIcon,
     description:
-    'I possess proficiency in utilizing Git for efficient code management, and facilitating collaborative workflows, enabling me to work in a team environment seamlessly',
+      'I possess proficiency in utilizing Git for efficient code management, and facilitating collaborative workflows, enabling me to work in a team environment seamlessly',
   },
   {
     id: 'github',
@@ -270,12 +269,12 @@ const skills = [
     description:
       'During my time at Oranda as an intern, I got hands-on with PostgreSQL. This included crafting and handling complex database schemas. This practical experience covered diverse areas like database normalization, triggers, and front-end connectivity.',
   },
-    {
+  {
     id: 'tensorflow',
     title: 'Tensorflow',
     icon: tensorflow,
     description:
-    'During my time at Oranda, I used Tensorflow to create an innovative AI-driven art platform',
+      'During my time at Oranda, I used Tensorflow to create an innovative AI-driven art platform',
   },
   {
     id: 'py',
@@ -284,12 +283,11 @@ const skills = [
     description:
       'With three years of Python experience under my belt, I have refined my skills in back-end development, focusing particularly on AI.',
   },
-    {
+  {
     id: 'c',
     title: 'C',
     icon: c,
-    description:
-      'I have a basic understanding of C from my school coursework',
+    description: 'I have a basic understanding of C from my school coursework',
   },
   {
     id: 'node',
@@ -298,7 +296,7 @@ const skills = [
     description:
       'When it comes to building web applications, I prefer using Node as my runtime environment over Yarn. I have expertise in leveraging Node.js to develop powerful and scalable web applications.',
   },
-    {
+  {
     id: 'numpy',
     title: 'NumPy',
     icon: numpy,
@@ -321,13 +319,35 @@ const skills = [
   },
 ];
 
-const cardInfo={
-    company: "Oranda",
+const cardInfo = [
+  {
+    company: 'Oranda',
     companylogo: orandaIcon,
-    role: "Software Developer Intern",
-    date: "December 2022 - April 2023",
-    desc: "During my internship, I contributed to the development of the back-end infrastructure for an innovative AI-driven art platform, using PyTorch, FastAPI, GCP, and PostgreSQL. I also accomplished a 40% reduction in inference costs for a proprietary Stable Diffusion model by transitioning to serverless GPU hosting. In addition, I designed and implemented an creative legal tool that transformed the process of navigating PDF documents into a seamless, AI-enhanced experience for a prominent real estate firm.",
-}
+    backgroundColor: '#ff914c',
+    role: 'Software Developer Intern',
+    date: 'December 2022 - April 2023',
+    descBullets: [
+      'Led development on the back-end infrastructure for an innovative AI-driven art platform, using PyTorch, FastAPI, GCP, and PostgreSQL',
+      'Reduced inference cost by 40% for a proprietary Stable Diffusion model by transitioning to serverless GPU hosting',
+      'Developed an innovative legal tool that transformed the process of navigating PDF documents into a seamless, AI-enhanced experience for a prominent real estate firm',
+    ],
+  },
+  {
+    company: 'Nest Wallet',
+    companylogo: nestwalletIcon,
+    backgroundColor: '#facc15',
+    role: 'Fullstack Engineer Intern',
+    date: 'January 2024 - August 2024',
+    descBullets: [
+      'Integrated real-time on-chain trade data, streaming it to the frontend via WebSocket connections, enabling live updates and data visualization similar to Dex Screener',
+      'Built a Quest System using React and Golang that included crypto-related quests enhancing user engagement',
+      'Added a Security Report system for Solana and Ethereum tokens, calculating a risk score based on flagged risks and displaying key metrics such as top holders and token liquidity',
+      'Developed a Promo Code system for users, enabling blockchain-specific discounts and XP rewards',
+      'Desgined a Referral Rewards Portal for mobile and web, implementing real-time calculations of referral earnings based on trade volume',
+      'Added OAuth authentication for Twitter and Discord',
+    ],
+  },
+];
 
 const markerSvg = `<svg viewBox="-4 0 36 36">
     <path fill="currentColor" d="M14,0 C21.732,0 28,5.641 28,12.6 C28,23.963 14,36 14,36 C14,36 0,24.064 0,12.6 C0,5.641 6.268,0 14,0 Z"></path>

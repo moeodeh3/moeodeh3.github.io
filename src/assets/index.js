@@ -32,6 +32,7 @@ import menu from './menu.svg';
 
 //Jobs
 import orandaIcon from './jobs/oranda.png';
+import nestwalletIcon from './jobs/nestwallet.png'
 
 // Projects
 import checkout from './projects/checkout.gif';
@@ -62,6 +63,7 @@ export {
   avatar,
   moeLogo,
   orandaIcon,
+  nestwalletIcon,
   pyTorch,
   background,
   tensorflow,
@@ -70,5 +72,5 @@ export {
   c,
   anaconda,
   gcp,
-  docker
+  docker,
 };
